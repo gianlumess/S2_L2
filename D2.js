@@ -1,16 +1,20 @@
+/********************************LE RISPOSTE VANNO DECOMMENTATE PER CONTROLLARLE NELLA CONSOLE UNA PER VOLTA PER EVITARE ERRORI DI CODICE IN QUANTO HO UTILIZZATO LE STESSE VARIABILI IN PIù ESERCIZI */
+
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/*
- const num1 = 10;
+/* 
+const num1 = 10;
 const num2 = 6;
 if (num1 > num2) {
   console.log("num1 è maggiore di num2");
-} else {
+} else if (num1 < num2) {
   console.log("num1 è minore di num2");
-} 
-*/
+} else {
+  console.log("num1 e num2 sono uguali");
+}
+ */
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -22,11 +26,17 @@ if (numEsercizio2 !== 5) {
   console.log("not equal");
 } else {
   console.log("equal");
-} 
-*/
+}
+ */
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
+*/
+
+/* let x = 10;
+if (x % 5 === 0) {
+  console.log("disvisibile per 5");
+}
 */
 
 /* ESERCIZIO 4
@@ -73,7 +83,7 @@ if (totalShoppingCart > 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* 
+/*
 let totalShoppingCart = 60;
 let blackFriday = true;
 if (blackFriday === true) {
@@ -102,11 +112,34 @@ if (blackFriday === true) {
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
-/* 
+
+/*
 const num1 = 3;
 const num2 = 8;
-const num3 = 6; 
- */
+const num3 = 6;
+
+if (num1 >= num2) {
+  if (num3 >= num1) {
+    console.log(num3, num1, num2);
+  } else {
+    if (num3 >= num2) {
+      console.log(num1, num3, num2);
+    } else {
+      console.log(num1, num2, num3);
+    }
+  }
+} else {
+  if (num3 >= num2) {
+    console.log(num3, num2, num1);
+  } else {
+    if (num3 >= num1) {
+      console.log(num2, num3, num1);
+    } else {
+      console.log(num2, num1, num3);
+    }
+  }
+}
+*/
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
